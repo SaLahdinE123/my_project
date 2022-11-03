@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calc {
+    height: 415px;
+    display: grid;
+    grid-template-columns: repeat(4 , 90px);
+    /* width: 140px; */
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    outline: none;
+    border: .5px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+    margin-top: 2px;
+    width: 70px;
+    height: 43px;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+button:active{
+    background-color: aqua;
+    color: black;
+}
+#output{
+    width: calc(90px * 4);
+    grid-column: span 4;
+    height: 55px;
+    font-size: 35px;
+    background-color: aliceblue;
+}
